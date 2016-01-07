@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package net.camluc.algorithms.generator;
+package net.camluc.algorithms.utils;
 
 import net.camluc.algorithms.utils.SortUtils;
 import org.junit.Test;
