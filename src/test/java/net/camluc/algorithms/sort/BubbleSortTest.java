@@ -13,19 +13,19 @@ import static org.junit.Assert.*;
  *
  * @author Cam
  */
-public class BucketSortTest {
+public class BubbleSortTest {
 
-    SortAlgorithm bucketSort = new BucketSort();
+    SortAlgorithm bubbleSort = new BubbleSort();
 
-    public BucketSortTest() {
+    public BubbleSortTest() {
     }
 
     @Test
     public void testSort() {
-        System.out.println("bucket sort");
+        System.out.println("bubble sort");
         int[] arr = SortUtils.createUnsortedArray(1000, 10000);
-        int[] result = bucketSort.sort(arr);
         SortUtils.dump(arr);
+        int[] result = bubbleSort.sort(arr);
         SortUtils.dump(result);
         assertTrue(SortUtils.isSortedArray(result));
     }

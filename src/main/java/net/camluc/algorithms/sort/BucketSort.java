@@ -14,7 +14,7 @@ import net.camluc.algorithms.utils.SortUtils;
  *
  * @author Cam
  */
-public class BucketSort {
+public class BucketSort implements SortAlgorithm {
 
     /**
      * Sort array in ascending order, using bucket sort.
@@ -22,7 +22,8 @@ public class BucketSort {
      * @param arr An array of non-negative integers
      * @return Sorted array
      */
-    public static int[] sort(int[] arr) {
+    @Override
+    public int[] sort(int[] arr) {
         if (arr == null || arr.length == 0) {
             throw new IllegalArgumentException("Array cannot be null or empty");
         }
